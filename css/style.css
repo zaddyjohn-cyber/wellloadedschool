@@ -1730,6 +1730,31 @@ strong { color: var(--text-dark); font-weight: 600; }
 
 .trust-phone-screen {
   padding: 14px;
+  position: relative;
+  overflow: hidden;
+}
+
+.trust-phone-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  z-index: 0;
+}
+
+.trust-phone-video-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(5,15,35,0.72) 0%, rgba(5,15,35,0.55) 100%);
+  z-index: 1;
+}
+
+.trust-phone-header,
+.trust-phone-ticker-wrap {
+  position: relative;
+  z-index: 2;
 }
 
 .trust-phone-header {
