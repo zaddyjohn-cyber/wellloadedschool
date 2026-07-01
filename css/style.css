@@ -1688,6 +1688,37 @@ strong { color: var(--text-dark); font-weight: 600; }
   gap: 20px;
 }
 
+/* Side-by-side: cards left, phone right */
+.trust-media-row {
+  display: flex;
+  gap: 16px;
+  align-items: stretch;
+  min-height: 360px;
+}
+
+/* Scrolling cards column */
+.trust-floating-cards {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.trust-floating-cards-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  animation: scrollTicker 25s linear infinite;
+}
+
+/* Phone column */
+.trust-phone-wrap {
+  flex: 0 0 48%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  perspective: 1000px;
+}
+
 /* ---- Phone mockup ---- */
 .trust-phone-wrap {
   display: flex;
@@ -1698,6 +1729,9 @@ strong { color: var(--text-dark); font-weight: 600; }
 .trust-phone {
   animation: rotatePhone 8s ease-in-out infinite;
   transform-style: preserve-3d;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 @keyframes rotatePhone {
@@ -1740,6 +1774,8 @@ strong { color: var(--text-dark); font-weight: 600; }
   padding: 14px;
   position: relative;
   overflow: hidden;
+  flex: 1;
+  min-height: 300px;
 }
 
 .trust-phone-video {
