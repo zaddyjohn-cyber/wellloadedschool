@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us – Welloaded Schools</title>
+  <meta name="description" content="Learn about Welloaded Schools — our mission, what we cover, who we help, and why thousands of students trust us for scholarships, grants, and education updates.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="progress-bar"></div>
+
+<div class="announcement-bar" id="announcement-bar">
+  <div class="container">
+    <div class="announcement-scroll">
+      <span class="announcement-dot"></span>
+      <span class="announcement-text">🎓 Commonwealth Scholarship 2026 Open &nbsp;|&nbsp; 💰 New Grant for African Youths — Up to $5,000 &nbsp;|&nbsp; 📋 JAMB 2026 Full Registration Guide Published</span>
+    </div>
+    <button class="announcement-close" id="announcement-close">✕</button>
+  </div>
+</div>
+
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="site-logo">
+      <div class="logo-icon">W</div>
+      <div class="logo-text">
+        <span class="logo-name">Welloaded Schools</span>
+        <span class="logo-tagline">Your Student Opportunity Hub</span>
+      </div>
+    </a>
+    <nav class="primary-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="category.html" class="nav-link">Scholarships</a>
+      <a href="category.html" class="nav-link">Grants</a>
+      <a href="category.html" class="nav-link">Student Loans</a>
+      <a href="category.html" class="nav-link">WAEC/NECO/JAMB</a>
+      <a href="category.html" class="nav-link">Admission News</a>
+      <a href="category.html" class="nav-link">Study Tips</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="search-btn" id="search-btn" aria-label="Search">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      </button>
+      <button class="dark-mode-btn" id="dark-mode-btn" aria-label="Toggle dark mode">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+<nav class="mobile-nav" id="mobile-nav">
+  <div class="mobile-nav-header">
+    <a href="index.html" class="site-logo"><div class="logo-icon">W</div><div class="logo-text"><span class="logo-name">Welloaded Schools</span></div></a>
+    <button class="mobile-nav-close" id="mobile-nav-close">✕</button>
+  </div>
+  <a href="index.html">🏠 Home</a>
+  <a href="category.html">🎓 Scholarships</a>
+  <a href="category.html">💰 Grants</a>
+  <a href="category.html">📚 Bursaries</a>
+  <a href="category.html">🏦 Student Loans</a>
+  <div class="mobile-nav-divider"></div>
+  <a href="category.html">📝 WAEC Updates</a>
+  <a href="category.html">📋 NECO Updates</a>
+  <a href="category.html">📚 JAMB Updates</a>
+  <div class="mobile-nav-divider"></div>
+  <a href="about.html">ℹ️ About</a>
+  <a href="contact.html">📧 Contact</a>
+</nav>
+
+<div class="search-overlay" id="search-overlay">
+  <div class="search-box">
+    <h3>🔍 Search Welloaded Schools</h3>
+    <div class="search-input-wrap">
+      <input type="text" id="search-input" placeholder="Search scholarships, grants, JAMB...">
+      <button class="btn btn-blue btn-sm" id="search-submit">Search</button>
+    </div>
+  </div>
+  <button class="search-close" id="search-overlay-close">✕</button>
+</div>
+
+<!-- ABOUT HERO -->
+<div class="about-hero">
+  <div class="container">
+    <nav class="post-breadcrumb" style="justify-content:center;margin-bottom:20px;" aria-label="Breadcrumb">
+      <a href="index.html" style="color:rgba(255,255,255,0.7);">Home</a>
+      <span style="color:rgba(255,255,255,0.4);">›</span>
+      <span style="color:rgba(255,255,255,0.9);">About Us</span>
+    </nav>
+    <span class="section-badge" style="background:rgba(255,255,255,0.12);color:#fff;border:1px solid rgba(255,255,255,0.2);">ℹ️ Our Story</span>
+    <h1 style="margin-top:12px;">About Welloaded Schools</h1>
+    <p>We exist to help every student find the opportunity they deserve — in plain English, with clear steps, and without any confusion.</p>
+  </div>
+</div>
+
+<!-- MISSION CARD -->
+<div class="container">
+  <div class="about-mission fade-in">
+    <span class="section-badge" style="margin-bottom:14px;">🎯 Our Mission</span>
+    <h2>Making Education Opportunities Accessible to Every Student</h2>
+    <p>Welloaded Schools was created to help students and youths find useful education updates and funding opportunities without stress. Many students miss scholarships, grants, bursaries, and admission updates because the information is scattered or written in difficult language. <strong>Welloaded Schools makes the information simple, clear, and easy to follow.</strong></p>
+    <p>We believe that where you were born should not determine how far you can go. Every student deserves access to clear, honest, and reliable education information — and that's exactly what we provide.</p>
+  </div>
+</div>
+
+<!-- WHAT WE COVER -->
+<section class="section fade-in" aria-labelledby="covers-heading">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">📂 Our Content</span>
+      <h2 class="section-title" id="covers-heading">What We <span>Cover</span></h2>
+      <p class="section-subtitle">14 content categories designed to help students at every stage of their education journey.</p>
+    </div>
+    <div class="about-covers">
+      <div class="cover-item"><span>🎓</span><p>Scholarships</p></div>
+      <div class="cover-item"><span>💰</span><p>Grants</p></div>
+      <div class="cover-item"><span>📜</span><p>Bursaries</p></div>
+      <div class="cover-item"><span>🏦</span><p>Student Loans</p></div>
+      <div class="cover-item"><span>📱</span><p>Loan Apps</p></div>
+      <div class="cover-item"><span>📝</span><p>WAEC Updates</p></div>
+      <div class="cover-item"><span>📋</span><p>NECO Updates</p></div>
+      <div class="cover-item"><span>📚</span><p>JAMB Updates</p></div>
+      <div class="cover-item"><span>🏫</span><p>Admission News</p></div>
+      <div class="cover-item"><span>✈️</span><p>Study Abroad</p></div>
+      <div class="cover-item"><span>📖</span><p>Study Tips</p></div>
+      <div class="cover-item"><span>🏛️</span><p>School News</p></div>
+      <div class="cover-item"><span>💼</span><p>Career Guides</p></div>
+      <div class="cover-item"><span>🌟</span><p>Youth Opportunities</p></div>
+      <div class="cover-item"><span>🌍</span><p>International Programs</p></div>
+      <div class="cover-item"><span>🛡️</span><p>Scam Awareness</p></div>
+      <div class="cover-item"><span>📄</span><p>Application Guides</p></div>
+      <div class="cover-item"><span>🎯</span><p>Exam Preparation</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO WE HELP -->
+<section class="section section-alt fade-in" aria-labelledby="who-heading">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">👥 Who We Serve</span>
+      <h2 class="section-title" id="who-heading">Who We <span>Help</span></h2>
+      <p class="section-subtitle">Our content is built for students and opportunity seekers in Tier 3 countries — especially across Africa and Asia.</p>
+    </div>
+    <div class="grid-4" style="gap:20px;">
+      <div class="card" style="padding:24px;text-align:center;">
+        <div style="font-size:2.5rem;margin-bottom:12px;">🧑‍🎓</div>
+        <h3 style="font-size:1rem;margin-bottom:6px;">Students</h3>
+        <p style="font-size:0.85rem;margin:0;">From secondary school to university — we help students find scholarships, understand exam updates, and navigate admissions.</p>
+      </div>
+      <div class="card" style="padding:24px;text-align:center;">
+        <div style="font-size:2.5rem;margin-bottom:12px;">👨‍👩‍👧</div>
+        <h3 style="font-size:1rem;margin-bottom:6px;">Parents</h3>
+        <p style="font-size:0.85rem;margin:0;">Parents looking for funding options, loan guides, and ways to support their children's education journey.</p>
+      </div>
+      <div class="card" style="padding:24px;text-align:center;">
+        <div style="font-size:2.5rem;margin-bottom:12px;">🌟</div>
+        <h3 style="font-size:1rem;margin-bottom:6px;">Youth &amp; Graduates</h3>
+        <p style="font-size:0.85rem;margin:0;">Young people looking for grants, career opportunities, internships, and youth programs.</p>
+      </div>
+      <div class="card" style="padding:24px;text-align:center;">
+        <div style="font-size:2.5rem;margin-bottom:12px;">🔍</div>
+        <h3 style="font-size:1rem;margin-bottom:6px;">Opportunity Seekers</h3>
+        <p style="font-size:0.85rem;margin:0;">Anyone looking for legit education funding, grants, or programs — regardless of their background.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:28px;padding:20px;background:var(--white);border-radius:var(--radius);border:1.5px solid var(--border-light);display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+      <div style="font-size:1.5rem;">🌍</div>
+      <div>
+        <strong style="display:block;margin-bottom:4px;">Countries We Focus On</strong>
+        <span style="font-size:0.875rem;color:var(--text-muted);">🇳🇬 Nigeria &nbsp;·&nbsp; 🇬🇭 Ghana &nbsp;·&nbsp; 🇰🇪 Kenya &nbsp;·&nbsp; 🇮🇳 India &nbsp;·&nbsp; 🇿🇦 South Africa &nbsp;·&nbsp; 🇺🇬 Uganda &nbsp;·&nbsp; 🇹🇿 Tanzania &nbsp;·&nbsp; 🇪🇹 Ethiopia &nbsp;·&nbsp; and more across Africa &amp; Asia</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY TRUST US -->
+<section class="section trust-section fade-in" aria-labelledby="trust-heading">
+  <div class="container">
+    <div class="trust-inner">
+      <div class="trust-content">
+        <span class="section-badge">💎 Why Trust Us</span>
+        <h2 id="trust-heading">Why Students Trust Welloaded Schools</h2>
+        <p>We are not a click-bait news site. We are not here to mislead you. We are a student-first platform built to help you find real, verified opportunities.</p>
+        <div class="trust-points">
+          <div class="trust-point">
+            <div class="trust-point-icon">✅</div>
+            <div class="trust-point-body">
+              <strong>We Verify Before We Publish</strong>
+              <span>Every opportunity we cover is verified from official sources before we post it.</span>
+            </div>
+          </div>
+          <div class="trust-point">
+            <div class="trust-point-icon">🌍</div>
+            <div class="trust-point-body">
+              <strong>We Write in Plain English</strong>
+              <span>Our guides are written simply so any student can read and understand them.</span>
+            </div>
+          </div>
+          <div class="trust-point">
+            <div class="trust-point-icon">📅</div>
+            <div class="trust-point-body">
+              <strong>We Update Regularly</strong>
+              <span>We check and update deadlines, requirements, and information frequently.</span>
+            </div>
+          </div>
+          <div class="trust-point">
+            <div class="trust-point-icon">🛡️</div>
+            <div class="trust-point-body">
+              <strong>We Warn Against Scams</strong>
+              <span>We actively warn students about fake scholarship sites and unsafe loan apps.</span>
+            </div>
+          </div>
+          <div class="trust-point">
+            <div class="trust-point-icon">💚</div>
+            <div class="trust-point-body">
+              <strong>We Put Students First</strong>
+              <span>Everything we do is designed around what is most helpful for students — not what gets the most clicks.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="trust-numbers">
+        <div class="trust-num-card">
+          <span class="number">10K+</span>
+          <span class="label">Students Helped</span>
+        </div>
+        <div class="trust-num-card">
+          <span class="number">500+</span>
+          <span class="label">Articles Published</span>
+        </div>
+        <div class="trust-num-card">
+          <span class="number">14</span>
+          <span class="label">Content Categories</span>
+        </div>
+        <div class="trust-num-card">
+          <span class="number">20+</span>
+          <span class="label">Countries Covered</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUR VALUES -->
+<section class="section section-alt fade-in" aria-labelledby="values-heading">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">🎯 Our Values</span>
+      <h2 class="section-title" id="values-heading">What We <span>Stand For</span></h2>
+      <p class="section-subtitle">The principles that guide everything we write and publish on Welloaded Schools.</p>
+    </div>
+    <div class="about-values">
+      <div class="value-card">
+        <span class="value-icon">🔍</span>
+        <h3>Honesty</h3>
+        <p>We never exaggerate or use clickbait headlines. If an opportunity sounds too good to be true, we say so — clearly.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-icon">🎯</span>
+        <h3>Clarity</h3>
+        <p>We break down complex education information into simple, step-by-step guides that any student can follow without confusion.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-icon">🛡️</span>
+        <h3>Safety</h3>
+        <p>We actively protect students from scams, fake scholarships, and dangerous loan apps by publishing clear warnings and safety tips.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-icon">📅</span>
+        <h3>Timeliness</h3>
+        <p>We update our content regularly so you never miss a deadline or get outdated information when you need it most.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-icon">💚</span>
+        <h3>Accessibility</h3>
+        <p>Our content is free. It always will be. Every student deserves access to this information, regardless of where they come from.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-icon">🌍</span>
+        <h3>Inclusivity</h3>
+        <p>We cover opportunities from Nigeria, Ghana, Kenya, India, and beyond — because opportunity should have no borders.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUR PROMISE -->
+<section class="section fade-in" aria-labelledby="promise-heading">
+  <div class="container">
+    <div style="max-width:780px;margin:0 auto;text-align:center;">
+      <span class="section-badge">🤝 Our Promise</span>
+      <h2 class="section-title" id="promise-heading" style="margin-top:12px;">Our Promise to <span>Every Student</span></h2>
+      <div style="background:var(--white);border:1.5px solid var(--border-light);border-radius:var(--radius-lg);padding:40px;box-shadow:var(--shadow-md);margin-top:28px;text-align:left;">
+        <div style="display:flex;flex-direction:column;gap:16px;">
+          <div style="display:flex;gap:14px;align-items:flex-start;padding:14px;background:var(--bg);border-radius:var(--radius-sm);">
+            <span style="font-size:1.2rem;">✅</span>
+            <div><strong>We will always write in simple English</strong> — no complicated language or academic jargon.</div>
+          </div>
+          <div style="display:flex;gap:14px;align-items:flex-start;padding:14px;background:var(--bg);border-radius:var(--radius-sm);">
+            <span style="font-size:1.2rem;">✅</span>
+            <div><strong>We will always link to official sources</strong> — so you can verify every opportunity yourself.</div>
+          </div>
+          <div style="display:flex;gap:14px;align-items:flex-start;padding:14px;background:var(--bg);border-radius:var(--radius-sm);">
+            <span style="font-size:1.2rem;">✅</span>
+            <div><strong>We will never charge you for information</strong> — our content is free now and always will be.</div>
+          </div>
+          <div style="display:flex;gap:14px;align-items:flex-start;padding:14px;background:var(--bg);border-radius:var(--radius-sm);">
+            <span style="font-size:1.2rem;">✅</span>
+            <div><strong>We will always warn you about scams</strong> — your safety and your money matter to us.</div>
+          </div>
+          <div style="display:flex;gap:14px;align-items:flex-start;padding:14px;background:var(--bg);border-radius:var(--radius-sm);">
+            <span style="font-size:1.2rem;">✅</span>
+            <div><strong>We will keep improving</strong> — based on what students actually need, not what gets the most traffic.</div>
+          </div>
+        </div>
+        <div style="margin-top:28px;text-align:center;">
+          <a href="index.html" class="btn btn-primary btn-lg">Start Exploring Opportunities →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter-section fade-in">
+  <div class="container">
+    <div class="newsletter-inner">
+      <div class="newsletter-content">
+        <span class="badge">📬 Stay Connected</span>
+        <h2>Get Student Opportunities in Your Inbox</h2>
+        <p>Join 10,000+ students already receiving free scholarship alerts, exam updates, and funding guides.</p>
+        <div class="newsletter-features">
+          <div class="newsletter-feature">New scholarships as they open</div>
+          <div class="newsletter-feature">JAMB, WAEC &amp; NECO updates</div>
+          <div class="newsletter-feature">Grants and bursary alerts</div>
+          <div class="newsletter-feature">Step-by-step application guides</div>
+        </div>
+      </div>
+      <div class="newsletter-form-wrap">
+        <h3>📧 Subscribe Free</h3>
+        <p>No spam. Unsubscribe anytime.</p>
+        <form class="newsletter-form" novalidate>
+          <input type="text" placeholder="Your full name" required>
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit">Subscribe for Free →</button>
+        </form>
+        <p class="newsletter-privacy">🔒 We respect your privacy. No spam, ever.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="site-logo">
+          <div class="logo-icon">W</div>
+          <div class="logo-text"><span class="logo-name">Welloaded Schools</span><span class="logo-tagline">Your Student Opportunity Hub</span></div>
+        </a>
+        <p class="footer-desc">Helping students in Nigeria, Ghana, Kenya, India, and beyond find legit scholarships, grants, and education guides — in simple English.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn">📘</a><a href="#" class="social-btn">🐦</a><a href="#" class="social-btn">📸</a><a href="#" class="social-btn">💬</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <ul class="footer-links">
+          <li><a href="category.html">🎓 Scholarships</a></li>
+          <li><a href="category.html">💰 Grants</a></li>
+          <li><a href="category.html">📝 WAEC Updates</a></li>
+          <li><a href="category.html">📚 JAMB Updates</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul class="footer-links">
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="contact.html">Advertise</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2026 Welloaded Schools. All rights reserved.</p>
+      <div class="footer-legal"><a href="privacy-policy.html">Privacy</a><a href="disclaimer.html">Disclaimer</a><a href="contact.html">Contact</a></div>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top">
+  <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="m18 15-6-6-6 6"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>

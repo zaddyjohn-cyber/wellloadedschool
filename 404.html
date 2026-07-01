@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found – Welloaded Schools</title>
+  <meta name="description" content="Sorry, the page you were looking for could not be found. Return to Welloaded Schools to find scholarships, grants, and student opportunities.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="site-logo">
+      <div class="logo-icon">W</div>
+      <div class="logo-text">
+        <span class="logo-name">Welloaded Schools</span>
+        <span class="logo-tagline">Your Student Opportunity Hub</span>
+      </div>
+    </a>
+    <nav class="primary-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="category.html" class="nav-link">Scholarships</a>
+      <a href="category.html" class="nav-link">Grants</a>
+      <a href="category.html" class="nav-link">Student Loans</a>
+      <a href="category.html" class="nav-link">WAEC/NECO/JAMB</a>
+      <a href="category.html" class="nav-link">Admission News</a>
+      <a href="category.html" class="nav-link">Study Tips</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="search-btn" id="search-btn" aria-label="Search">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      </button>
+      <button class="dark-mode-btn" id="dark-mode-btn" aria-label="Toggle dark mode">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+<nav class="mobile-nav" id="mobile-nav">
+  <div class="mobile-nav-header">
+    <a href="index.html" class="site-logo"><div class="logo-icon">W</div><div class="logo-text"><span class="logo-name">Welloaded Schools</span></div></a>
+    <button class="mobile-nav-close" id="mobile-nav-close">✕</button>
+  </div>
+  <a href="index.html">🏠 Home</a>
+  <a href="category.html">🎓 Scholarships</a>
+  <a href="category.html">💰 Grants</a>
+  <a href="category.html">📚 Bursaries</a>
+  <div class="mobile-nav-divider"></div>
+  <a href="about.html">ℹ️ About</a>
+  <a href="contact.html">📧 Contact</a>
+</nav>
+
+<div class="search-overlay" id="search-overlay">
+  <div class="search-box">
+    <h3>🔍 Search Welloaded Schools</h3>
+    <div class="search-input-wrap">
+      <input type="text" id="search-input" placeholder="Search scholarships, grants, JAMB...">
+      <button class="btn btn-blue btn-sm" id="search-submit">Search</button>
+    </div>
+  </div>
+  <button class="search-close" id="search-overlay-close">✕</button>
+</div>
+
+<!-- 404 CONTENT -->
+<div class="page-404">
+  <div class="page-404-inner">
+    <span class="page-404-icon">🔍</span>
+    <div class="page-404-num">404</div>
+    <h2>Oops! Page Not Found</h2>
+    <p>The page you're looking for doesn't exist, may have been moved, or the URL might be incorrect. Don't worry — there are plenty of opportunities waiting for you on our site.</p>
+
+    <div class="page-404-actions">
+      <a href="index.html" class="btn btn-primary btn-lg">🏠 Go to Homepage</a>
+      <button class="btn btn-blue btn-lg" onclick="document.getElementById('search-btn').click()">🔍 Search the Site</button>
+    </div>
+
+    <div class="page-404-suggestions">
+      <h4>Or try one of these popular pages:</h4>
+      <div class="categories-grid" style="grid-template-columns:repeat(2,1fr);gap:12px;margin-top:0;">
+        <a href="category.html" class="category-card" style="--cat-color:#123C69;--cat-bg:#EAF4FF;padding:16px;">
+          <div class="category-icon-wrap" style="width:40px;height:40px;font-size:1.2rem;margin-bottom:8px;">🎓</div>
+          <h3 style="font-size:0.875rem;">Scholarships</h3>
+        </a>
+        <a href="category.html" class="category-card" style="--cat-color:#0E9F6E;--cat-bg:rgba(14,159,110,0.1);padding:16px;">
+          <div class="category-icon-wrap" style="width:40px;height:40px;font-size:1.2rem;margin-bottom:8px;">💰</div>
+          <h3 style="font-size:0.875rem;">Grants</h3>
+        </a>
+        <a href="category.html" class="category-card" style="--cat-color:#DC2626;--cat-bg:rgba(220,38,38,0.08);padding:16px;">
+          <div class="category-icon-wrap" style="width:40px;height:40px;font-size:1.2rem;margin-bottom:8px;">📝</div>
+          <h3 style="font-size:0.875rem;">WAEC Updates</h3>
+        </a>
+        <a href="category.html" class="category-card" style="--cat-color:#059669;--cat-bg:rgba(5,150,105,0.1);padding:16px;">
+          <div class="category-icon-wrap" style="width:40px;height:40px;font-size:1.2rem;margin-bottom:8px;">📚</div>
+          <h3 style="font-size:0.875rem;">JAMB Updates</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="site-logo">
+          <div class="logo-icon">W</div>
+          <div class="logo-text"><span class="logo-name">Welloaded Schools</span><span class="logo-tagline">Your Student Opportunity Hub</span></div>
+        </a>
+        <p class="footer-desc">Helping students in Nigeria, Ghana, Kenya, India, and beyond find legit scholarships, grants, and education guides.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <ul class="footer-links">
+          <li><a href="category.html">🎓 Scholarships</a></li>
+          <li><a href="category.html">💰 Grants</a></li>
+          <li><a href="category.html">📝 WAEC Updates</a></li>
+          <li><a href="category.html">📚 JAMB Updates</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul class="footer-links">
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2026 Welloaded Schools. All rights reserved.</p>
+      <div class="footer-legal"><a href="privacy-policy.html">Privacy</a><a href="disclaimer.html">Disclaimer</a><a href="contact.html">Contact</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

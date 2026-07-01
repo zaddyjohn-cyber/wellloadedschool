@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scholarships – Welloaded Schools</title>
+  <meta name="description" content="Browse all scholarships, grants, bursaries, and student funding opportunities for students in Nigeria, Ghana, Kenya, India and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="progress-bar"></div>
+
+<div class="announcement-bar" id="announcement-bar">
+  <div class="container">
+    <div class="announcement-scroll">
+      <span class="announcement-dot"></span>
+      <span class="announcement-text">🎓 Commonwealth Scholarship 2026 Open — Deadline Sep 15 &nbsp;|&nbsp; 📋 JAMB 2026 Registration Guide Published &nbsp;|&nbsp; 💰 New Grant: Up to $5,000 for African Youths</span>
+    </div>
+    <button class="announcement-close" id="announcement-close">✕</button>
+  </div>
+</div>
+
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="site-logo">
+      <div class="logo-icon">W</div>
+      <div class="logo-text">
+        <span class="logo-name">Welloaded Schools</span>
+        <span class="logo-tagline">Your Student Opportunity Hub</span>
+      </div>
+    </a>
+    <nav class="primary-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="category.html" class="nav-link active">Scholarships</a>
+      <a href="category.html" class="nav-link">Grants</a>
+      <a href="category.html" class="nav-link">Student Loans</a>
+      <a href="category.html" class="nav-link">WAEC/NECO/JAMB</a>
+      <a href="category.html" class="nav-link">Admission News</a>
+      <a href="category.html" class="nav-link">Study Tips</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="search-btn" id="search-btn" aria-label="Search">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      </button>
+      <button class="dark-mode-btn" id="dark-mode-btn" aria-label="Toggle dark mode">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+<nav class="mobile-nav" id="mobile-nav">
+  <div class="mobile-nav-header">
+    <a href="index.html" class="site-logo"><div class="logo-icon">W</div><div class="logo-text"><span class="logo-name">Welloaded Schools</span></div></a>
+    <button class="mobile-nav-close" id="mobile-nav-close">✕</button>
+  </div>
+  <a href="index.html">🏠 Home</a>
+  <a href="category.html">🎓 Scholarships</a>
+  <a href="category.html">💰 Grants</a>
+  <a href="category.html">📚 Bursaries</a>
+  <a href="category.html">🏦 Student Loans</a>
+  <div class="mobile-nav-divider"></div>
+  <a href="category.html">📝 WAEC Updates</a>
+  <a href="category.html">📋 NECO Updates</a>
+  <a href="category.html">📚 JAMB Updates</a>
+  <div class="mobile-nav-divider"></div>
+  <a href="about.html">ℹ️ About</a>
+  <a href="contact.html">📧 Contact</a>
+</nav>
+
+<div class="search-overlay" id="search-overlay">
+  <div class="search-box">
+    <h3>🔍 Search Welloaded Schools</h3>
+    <div class="search-input-wrap">
+      <input type="text" id="search-input" placeholder="Search scholarships, JAMB, grants...">
+      <button class="btn btn-blue btn-sm" id="search-submit">Search</button>
+    </div>
+  </div>
+  <button class="search-close" id="search-overlay-close">✕</button>
+</div>
+
+<!-- CATEGORY HERO -->
+<div class="category-hero">
+  <div class="container">
+    <nav class="post-breadcrumb" style="justify-content:center;" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span>›</span>
+      <span class="current">Scholarships</span>
+    </nav>
+    <span class="section-badge" style="background:rgba(255,255,255,0.15);color:#fff;border:1px solid rgba(255,255,255,0.25);margin-bottom:14px;">🎓 150+ Opportunities</span>
+    <h1>Scholarships for Students</h1>
+    <p>Fully verified scholarship opportunities for students in Nigeria, Ghana, Kenya, India, and beyond — with deadlines and step-by-step guides.</p>
+
+    <!-- Filter Tabs -->
+    <div class="category-filter">
+      <button class="filter-btn active">All</button>
+      <button class="filter-btn">Full Funding</button>
+      <button class="filter-btn">Partial Funding</button>
+      <button class="filter-btn">Nigeria</button>
+      <button class="filter-btn">International</button>
+      <button class="filter-btn">Postgraduate</button>
+      <button class="filter-btn">Undergraduate</button>
+    </div>
+  </div>
+</div>
+
+<!-- AD SPACE -->
+<div class="container">
+  <div class="ad-space ad-space-banner">Advertisement</div>
+</div>
+
+<!-- CATEGORY LAYOUT -->
+<div class="category-layout">
+
+  <!-- POSTS LIST -->
+  <main>
+    <div class="category-posts-header">
+      <h2>Showing 150 Scholarships</h2>
+      <select class="sort-select" aria-label="Sort posts">
+        <option>Latest First</option>
+        <option>Deadline: Soonest</option>
+        <option>Most Popular</option>
+        <option>Full Funding Only</option>
+      </select>
+    </div>
+
+    <!-- In-feed Ad -->
+    <div class="infeed-ad" style="margin-bottom:20px;">Advertisement · In-Feed</div>
+
+    <div class="posts-list">
+
+      <article class="post-list-card">
+        <div class="post-list-img" style="background:linear-gradient(135deg,#EAF4FF,#DBEAFE);">
+          <div class="post-list-img-placeholder">🎓</div>
+        </div>
+        <div class="post-list-body">
+          <div class="post-list-top">
+            <span class="tag tag-blue">Scholarship</span>
+            <span class="tag tag-green">Full Funding</span>
+            <span style="font-size:0.72rem;color:var(--text-light);">⭐ Featured</span>
+          </div>
+          <h3><a href="blog-post.html">Commonwealth Scholarship 2026 — Full Funding for African Students</a></h3>
+          <p>The Commonwealth Scholarship covers full tuition, return flights, monthly stipend, and thesis grant for postgraduate students from Nigeria and other Commonwealth countries.</p>
+          <div class="post-list-footer">
+            <span>📅 Deadline: Sep 15, 2026</span>
+            <span>🇬🇧 United Kingdom</span>
+            <span>Postgraduate</span>
+            <a href="blog-post.html" class="read-more" style="margin-left:auto;">Read Guide →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="post-list-card">
+        <div class="post-list-img" style="background:linear-gradient(135deg,rgba(14,159,110,0.1),#d1fae5);">
+          <div class="post-list-img-placeholder">🌍</div>
+        </div>
+        <div class="post-list-body">
+          <div class="post-list-top">
+            <span class="tag tag-blue">Scholarship</span>
+            <span class="tag tag-green">Full Funding</span>
+          </div>
+          <h3><a href="blog-post.html">Chevening Scholarship 2026–2027 — Apply Now</a></h3>
+          <p>The UK government's flagship scholarship for emerging leaders. Open to Nigerians with at least 2 years work experience. Covers full tuition, living costs, travel, and visa fees.</p>
+          <div class="post-list-footer">
+            <span>📅 Deadline: Nov 5, 2026</span>
+            <span>🇬🇧 United Kingdom</span>
+            <span>Masters</span>
+            <a href="blog-post.html" class="read-more" style="margin-left:auto;">Read Guide →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="post-list-card">
+        <div class="post-list-img" style="background:linear-gradient(135deg,rgba(249,178,51,0.1),#fef3c7);">
+          <div class="post-list-img-placeholder">📚</div>
+        </div>
+        <div class="post-list-body">
+          <div class="post-list-top">
+            <span class="tag tag-blue">Scholarship</span>
+            <span class="tag tag-yellow">Partial Funding</span>
+          </div>
+          <h3><a href="blog-post.html">DAAD Scholarship 2026 — Study in Germany for Free</a></h3>
+          <p>The German Academic Exchange Service offers scholarships to outstanding Nigerian graduates who want to pursue postgraduate studies in Germany. Monthly stipend plus health insurance included.</p>
+          <div class="post-list-footer">
+            <span>📅 Deadline: Oct 31, 2026</span>
+            <span>🇩🇪 Germany</span>
+            <span>Postgraduate</span>
+            <a href="blog-post.html" class="read-more" style="margin-left:auto;">Read Guide →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- In-feed Ad -->
+      <div class="infeed-ad" style="height:90px;">Advertisement · In-Feed</div>
+
+      <article class="post-list-card">
+        <div class="post-list-img" style="background:linear-gradient(135deg,rgba(124,58,237,0.08),#ede9fe);">
+          <div class="post-list-img-placeholder">🎖️</div>
+        </div>
+        <div class="post-list-body">
+          <div class="post-list-top">
+            <span class="tag tag-blue">Scholarship</span>
+            <span class="tag tag-green">Full Funding</span>
+          </div>
+          <h3><a href="blog-post.html">Federal Government Scholarship 2026 — Nigerian Students</a></h3>
+          <p>The Nigerian Federal Government scholarship programme for outstanding undergraduate and postgraduate students. Applications are open through the scholarship portal at scholarships.gov.ng.</p>
+          <div class="post-list-footer">
+            <span>📅 Deadline: Aug 31, 2026</span>
+            <span>🇳🇬 Nigeria</span>
+            <span>Undergraduate &amp; Postgraduate</span>
+            <a href="blog-post.html" class="read-more" style="margin-left:auto;">Read Guide →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="post-list-card">
+        <div class="post-list-img" style="background:linear-gradient(135deg,rgba(8,145,178,0.1),#e0f2fe);">
+          <div class="post-list-img-placeholder">✈️</div>
+        </div>
+        <div class="post-list-body">
+          <div class="post-list-top">
+            <span class="tag tag-blue">Scholarship</span>
+            <span class="tag tag-green">Full Funding</span>
+          </div>
+          <h3><a href="blog-post.html">Canada Government Scholarships for African Students 2026</a></h3>
+          <p>Canada offers several scholarship programs for students from African countries. This guide covers the top Canadian scholarships available to Nigerian, Ghanaian, and Kenyan students.</p>
+          <div class="post-list-footer">
+            <span>📅 Deadline: Dec 1, 2026</span>
+            <span>🇨🇦 Canada</span>
+            <span>Postgraduate</span>
+            <a href="blog-post.html" class="read-more" style="margin-left:auto;">Read Guide →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="post-list-card">
+        <div class="post-list-img" style="background:linear-gradient(135deg,rgba(220,38,38,0.08),#fee2e2);">
+          <div class="post-list-img-placeholder">🏛️</div>
+        </div>
+        <div class="post-list-body">
+          <div class="post-list-top">
+            <span class="tag tag-blue">Scholarship</span>
+            <span class="tag tag-yellow">Partial Funding</span>
+          </div>
+          <h3><a href="blog-post.html">PTDF Scholarship 2026 — Petroleum Technology Development Fund</a></h3>
+          <p>The PTDF offers scholarships for Nigerian students in oil &amp; gas, engineering, and related fields. Both local and overseas study options are available.</p>
+          <div class="post-list-footer">
+            <span>📅 Deadline: Sep 30, 2026</span>
+            <span>🇳🇬 Nigeria &amp; Overseas</span>
+            <span>Undergraduate &amp; Postgraduate</span>
+            <a href="blog-post.html" class="read-more" style="margin-left:auto;">Read Guide →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="post-list-card">
+        <div class="post-list-img" style="background:linear-gradient(135deg,#F0FDF4,#DCFCE7);">
+          <div class="post-list-img-placeholder">🌐</div>
+        </div>
+        <div class="post-list-body">
+          <div class="post-list-top">
+            <span class="tag tag-blue">Scholarship</span>
+            <span class="tag tag-green">Full Funding</span>
+          </div>
+          <h3><a href="blog-post.html">Mastercard Foundation Scholarship 2026 — African Students</a></h3>
+          <p>The Mastercard Foundation Scholars Program provides full scholarships to academically talented but economically disadvantaged African students at partner universities worldwide.</p>
+          <div class="post-list-footer">
+            <span>📅 Deadline: Oct 15, 2026</span>
+            <span>🌍 Worldwide</span>
+            <span>Undergraduate &amp; Postgraduate</span>
+            <a href="blog-post.html" class="read-more" style="margin-left:auto;">Read Guide →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- In-feed Ad -->
+      <div class="infeed-ad" style="height:90px;">Advertisement · In-Feed</div>
+
+      <article class="post-list-card">
+        <div class="post-list-img" style="background:linear-gradient(135deg,rgba(18,60,105,0.08),#dbeafe);">
+          <div class="post-list-img-placeholder">🎓</div>
+        </div>
+        <div class="post-list-body">
+          <div class="post-list-top">
+            <span class="tag tag-blue">Scholarship</span>
+            <span class="tag tag-green">Full Funding</span>
+          </div>
+          <h3><a href="blog-post.html">Fulbright Foreign Student Program 2026 — USA Scholarship</a></h3>
+          <p>The Fulbright Program is one of the most prestigious scholarships in the world. It offers fully-funded study opportunities in the USA for students from over 160 countries including Nigeria.</p>
+          <div class="post-list-footer">
+            <span>📅 Deadline: Nov 30, 2026</span>
+            <span>🇺🇸 United States</span>
+            <span>Postgraduate</span>
+            <a href="blog-post.html" class="read-more" style="margin-left:auto;">Read Guide →</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination">
+      <button class="page-btn active">1</button>
+      <button class="page-btn">2</button>
+      <button class="page-btn">3</button>
+      <button class="page-btn">4</button>
+      <button class="page-btn">5</button>
+      <button class="page-btn">→</button>
+    </div>
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside class="post-sidebar">
+
+    <div class="ad-space ad-space-rectangle">Advertisement · Sidebar</div>
+
+    <!-- Newsletter -->
+    <div class="sidebar-widget" style="background:linear-gradient(135deg,var(--blue-dark),var(--blue));">
+      <h4 style="color:#fff;border-color:rgba(255,255,255,0.2);">📬 Scholarship Alerts</h4>
+      <p style="font-size:0.82rem;color:rgba(255,255,255,0.75);margin-bottom:14px;">Get new scholarships in your inbox before deadlines pass.</p>
+      <form class="newsletter-form" novalidate>
+        <input type="email" placeholder="Your email..." required style="font-size:0.85rem;">
+        <button type="submit" style="font-size:0.85rem;">Subscribe Free →</button>
+      </form>
+    </div>
+
+    <!-- Filter by Country -->
+    <div class="sidebar-widget">
+      <h4>🌍 Filter by Country</h4>
+      <div class="sidebar-category-list">
+        <a href="category.html">🇳🇬 Nigeria <span class="count">80+</span></a>
+        <a href="category.html">🇬🇭 Ghana <span class="count">35+</span></a>
+        <a href="category.html">🇰🇪 Kenya <span class="count">30+</span></a>
+        <a href="category.html">🇮🇳 India <span class="count">40+</span></a>
+        <a href="category.html">🇬🇧 UK <span class="count">25+</span></a>
+        <a href="category.html">🇨🇦 Canada <span class="count">20+</span></a>
+        <a href="category.html">🇺🇸 USA <span class="count">30+</span></a>
+      </div>
+    </div>
+
+    <!-- Popular Guides -->
+    <div class="sidebar-widget">
+      <h4>📖 Popular Guides</h4>
+      <div class="sidebar-post-list">
+        <div class="sidebar-post">
+          <div class="sidebar-post-img" style="background:linear-gradient(135deg,rgba(249,178,51,0.1),#fef3c7);"><div class="sidebar-post-img-placeholder">✍️</div></div>
+          <div class="sidebar-post-info">
+            <h5><a href="blog-post.html">How to Write a Winning Scholarship Essay</a></h5>
+            <div class="sidebar-post-date">Step-by-step guide</div>
+          </div>
+        </div>
+        <div class="sidebar-post">
+          <div class="sidebar-post-img" style="background:linear-gradient(135deg,rgba(220,38,38,0.07),#fee2e2);"><div class="sidebar-post-img-placeholder">🛡️</div></div>
+          <div class="sidebar-post-info">
+            <h5><a href="blog-post.html">How to Spot Fake Scholarship Websites</a></h5>
+            <div class="sidebar-post-date">Safety guide</div>
+          </div>
+        </div>
+        <div class="sidebar-post">
+          <div class="sidebar-post-img" style="background:linear-gradient(135deg,#EAF4FF,#DBEAFE);"><div class="sidebar-post-img-placeholder">📁</div></div>
+          <div class="sidebar-post-info">
+            <h5><a href="blog-post.html">Documents Needed for Scholarship Applications</a></h5>
+            <div class="sidebar-post-date">Full checklist</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ad-space ad-space-rectangle">Advertisement · Sidebar</div>
+
+  </aside>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="site-logo">
+          <div class="logo-icon">W</div>
+          <div class="logo-text"><span class="logo-name">Welloaded Schools</span><span class="logo-tagline">Your Student Opportunity Hub</span></div>
+        </a>
+        <p class="footer-desc">Helping students in Nigeria, Ghana, Kenya, India, and beyond find legit scholarships, grants, and education guides.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn">📘</a><a href="#" class="social-btn">🐦</a><a href="#" class="social-btn">📸</a><a href="#" class="social-btn">💬</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <ul class="footer-links">
+          <li><a href="category.html">🎓 Scholarships</a></li>
+          <li><a href="category.html">💰 Grants</a></li>
+          <li><a href="category.html">📝 WAEC Updates</a></li>
+          <li><a href="category.html">📚 JAMB Updates</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul class="footer-links">
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="contact.html">Advertise</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2026 Welloaded Schools. All rights reserved.</p>
+      <div class="footer-legal"><a href="privacy-policy.html">Privacy</a><a href="disclaimer.html">Disclaimer</a><a href="contact.html">Contact</a></div>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top">
+  <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="m18 15-6-6-6 6"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
