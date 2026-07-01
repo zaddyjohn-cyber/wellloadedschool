@@ -1682,10 +1682,140 @@ strong { color: var(--text-dark); font-weight: 600; }
   color: rgba(255,255,255,0.65);
 }
 
+.trust-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ---- Phone mockup ---- */
+.trust-phone-wrap {
+  display: flex;
+  justify-content: center;
+  animation: floatPhone 4s ease-in-out infinite;
+}
+
+@keyframes floatPhone {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-8px); }
+}
+
+.trust-phone {
+  width: 100%;
+  max-width: 340px;
+  background: #0d2340;
+  border-radius: 18px;
+  border: 2px solid rgba(255,255,255,0.15);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+
+.trust-phone-bar {
+  display: flex;
+  gap: 6px;
+  padding: 10px 14px;
+  background: rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.trust-phone-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.25);
+}
+.trust-phone-dot:nth-child(1) { background: #ef4444; }
+.trust-phone-dot:nth-child(2) { background: #f59e0b; }
+.trust-phone-dot:nth-child(3) { background: #10b981; }
+
+.trust-phone-screen {
+  padding: 14px;
+}
+
+.trust-phone-header {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--yellow);
+  margin-bottom: 10px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.trust-phone-ticker-wrap {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.trust-phone-ticker {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  animation: scrollTicker 25s linear infinite;
+}
+
+@keyframes scrollTicker {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+
+.ticker-item {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.85);
+  padding: 9px 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  line-height: 1.45;
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+.ticker-tag {
+  font-size: 0.62rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.ticker-tag.scholarship { background: #123C69; color: #fff; }
+.ticker-tag.jamb        { background: #059669; color: #fff; }
+.ticker-tag.grant       { background: #D97706; color: #fff; }
+.ticker-tag.waec        { background: #DC2626; color: #fff; }
+.ticker-tag.neco        { background: #0891B2; color: #fff; }
+.ticker-tag.admission   { background: #7C3AED; color: #fff; }
+.ticker-tag.loan        { background: #0E9F6E; color: #fff; }
+
+/* ---- Stats grid ---- */
 .trust-numbers {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+}
+
+/* ---- Video stat card ---- */
+.trust-num-card--video {
+  position: relative;
+  overflow: hidden;
+}
+
+.trust-num-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  z-index: 0;
+  opacity: 0.35;
+}
+
+.trust-num-video-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10,30,60,0.6);
+  z-index: 1;
 }
 
 .trust-num-card {
