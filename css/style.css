@@ -3250,6 +3250,194 @@ body, .site-header, .card, .post-card, .category-card,
 }
 
 /* ============================================================
+   28a. COLORFUL OVERRIDES — Vibrant Cards & Sections
+   ============================================================ */
+
+/* --- Vibrant Category Cards --- */
+.category-card::before { display: none; }
+
+.cat-scholarships { background: linear-gradient(145deg, #0d3158, #123C69); border-color: transparent; }
+.cat-grants       { background: linear-gradient(145deg, #065f46, #0E9F6E); border-color: transparent; }
+.cat-bursaries    { background: linear-gradient(145deg, #4c1d95, #7C3AED); border-color: transparent; }
+.cat-loans        { background: linear-gradient(145deg, #92400e, #D97706); border-color: transparent; }
+.cat-waec         { background: linear-gradient(145deg, #7f1d1d, #DC2626); border-color: transparent; }
+.cat-neco         { background: linear-gradient(145deg, #0c4a6e, #0891B2); border-color: transparent; }
+.cat-jamb         { background: linear-gradient(145deg, #064e3b, #059669); border-color: transparent; }
+.cat-admission    { background: linear-gradient(145deg, #78350f, #F59E0B); border-color: transparent; }
+
+.cat-scholarships .category-icon-wrap,
+.cat-grants .category-icon-wrap,
+.cat-bursaries .category-icon-wrap,
+.cat-loans .category-icon-wrap,
+.cat-waec .category-icon-wrap,
+.cat-neco .category-icon-wrap,
+.cat-jamb .category-icon-wrap,
+.cat-admission .category-icon-wrap {
+  background: rgba(255,255,255,0.18);
+}
+
+.cat-scholarships h3, .cat-scholarships p,
+.cat-grants h3,       .cat-grants p,
+.cat-bursaries h3,    .cat-bursaries p,
+.cat-loans h3,        .cat-loans p,
+.cat-waec h3,         .cat-waec p,
+.cat-neco h3,         .cat-neco p,
+.cat-jamb h3,         .cat-jamb p,
+.cat-admission h3,    .cat-admission p {
+  color: rgba(255,255,255,0.9);
+}
+
+.cat-scholarships p, .cat-grants p, .cat-bursaries p,
+.cat-loans p, .cat-waec p, .cat-neco p, .cat-jamb p, .cat-admission p {
+  color: rgba(255,255,255,0.72);
+}
+
+.cat-scholarships .category-count,
+.cat-grants .category-count,
+.cat-bursaries .category-count,
+.cat-loans .category-count,
+.cat-waec .category-count,
+.cat-neco .category-count,
+.cat-jamb .category-count,
+.cat-admission .category-count {
+  background: rgba(255,255,255,0.18);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.category-card:is(.cat-scholarships,.cat-grants,.cat-bursaries,.cat-loans,
+                   .cat-waec,.cat-neco,.cat-jamb,.cat-admission):hover {
+  filter: brightness(1.12);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(0,0,0,0.22);
+  border-color: transparent;
+}
+
+/* --- Guide Cards with Images --- */
+.guide-card { padding: 0; overflow: hidden; }
+
+.guide-card-image {
+  height: 170px;
+  overflow: hidden;
+  position: relative;
+}
+
+.guide-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.guide-card:hover .guide-card-image img {
+  transform: scale(1.07);
+}
+
+.guide-card-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.35) 100%);
+}
+
+.guide-card-body {
+  padding: 22px 22px 24px;
+}
+
+.guide-card-body .guide-icon {
+  margin-bottom: 14px;
+}
+
+/* --- Colorful Tags — solid backgrounds --- */
+.tag-blue   { background: #123C69; color: #fff; }
+.tag-green  { background: #0E9F6E; color: #fff; }
+.tag-yellow { background: #D97706; color: #fff; }
+.tag-orange { background: #EA580C; color: #fff; }
+.tag-purple { background: #7C3AED; color: #fff; }
+.tag-red    { background: #DC2626; color: #fff; }
+
+[data-theme="dark"] .tag-blue,
+[data-theme="dark"] .tag-green,
+[data-theme="dark"] .tag-yellow,
+[data-theme="dark"] .tag-orange,
+[data-theme="dark"] .tag-purple,
+[data-theme="dark"] .tag-red { opacity: 0.9; }
+
+/* --- Colorful Section Headers --- */
+.section-title .highlight-blue   { color: var(--blue); }
+.section-title .highlight-green  { color: var(--green); }
+.section-title .highlight-yellow { color: var(--yellow); }
+
+/* --- Colorful Country Cards --- */
+.country-ng { background: linear-gradient(135deg, #f0fdf4, #dcfce7); border-color: #86efac; }
+.country-gh { background: linear-gradient(135deg, #fefce8, #fef08a40); border-color: #fde047; }
+.country-ke { background: linear-gradient(135deg, #fef2f2, #fecaca40); border-color: #fca5a5; }
+.country-in { background: linear-gradient(135deg, #fff7ed, #fed7aa40); border-color: #fdba74; }
+.country-za { background: linear-gradient(135deg, #eff6ff, #dbeafe); border-color: #93c5fd; }
+.country-ca { background: linear-gradient(135deg, #fef2f2, #fecaca30); border-color: #f87171; }
+.country-uk { background: linear-gradient(135deg, #eff6ff, #dbeafe); border-color: #93c5fd; }
+.country-us { background: linear-gradient(135deg, #f0f9ff, #bae6fd30); border-color: #7dd3fc; }
+
+.country-ng:hover { background: linear-gradient(135deg, #dcfce7, #bbf7d0); border-color: #4ade80; }
+.country-gh:hover { background: linear-gradient(135deg, #fefce8, #fef08a); border-color: #facc15; }
+.country-ke:hover { background: linear-gradient(135deg, #fef2f2, #fecaca); border-color: #f87171; }
+.country-in:hover { background: linear-gradient(135deg, #fff7ed, #fed7aa); border-color: #fb923c; }
+.country-za:hover { background: linear-gradient(135deg, #eff6ff, #bfdbfe); border-color: #60a5fa; }
+.country-ca:hover { background: linear-gradient(135deg, #fff1f2, #fecdd3); border-color: #fb7185; }
+.country-uk:hover { background: linear-gradient(135deg, #eff6ff, #bfdbfe); border-color: #3b82f6; }
+.country-us:hover { background: linear-gradient(135deg, #f0f9ff, #bae6fd); border-color: #38bdf8; }
+
+/* Remove default country card hover override */
+.country-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+/* --- Colorful Exam Cards --- */
+.exam-card {
+  border-left-width: 5px;
+}
+
+/* --- Colorful Section Backgrounds --- */
+.section-guides-bg {
+  background: linear-gradient(160deg, #f0f9ff 0%, #e0f2fe 50%, #f0fdf4 100%);
+}
+
+.section-opportunities-bg {
+  background: linear-gradient(160deg, #fafafa 0%, #f0f9ff 100%);
+}
+
+/* --- Post card image rounded top corners --- */
+.post-card-image {
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+/* --- Colorful hero badge pulse ring --- */
+.hero-badge-dot::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--yellow);
+  animation: pulse-ring 1.5s infinite;
+  top: -2px;
+  left: -2px;
+}
+
+@keyframes pulse-ring {
+  0%   { transform: scale(1); opacity: 1; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+
+.hero-badge-dot { position: relative; }
+
+/* --- Colorful stats bar items --- */
+.stat-icon {
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* ============================================================
    28b. FADE-IN ANIMATION (class-based, no invisible gaps)
    ============================================================ */
 .fade-in--ready {
