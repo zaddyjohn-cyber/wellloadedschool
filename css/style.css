@@ -1692,15 +1692,13 @@ strong { color: var(--text-dark); font-weight: 600; }
 .trust-media-row {
   display: flex;
   gap: 20px;
-  align-items: center;
-  min-height: 400px;
+  align-items: stretch;
 }
 
-/* Scrolling cards column — takes 55% */
+/* Scrolling cards column — takes 55%, height matches parent */
 .trust-floating-cards {
   flex: 0 0 55%;
   overflow: hidden;
-  height: 400px;
   position: relative;
 }
 
