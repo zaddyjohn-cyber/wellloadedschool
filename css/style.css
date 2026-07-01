@@ -1785,32 +1785,40 @@ strong { color: var(--text-dark); font-weight: 600; }
 }
 
 .ticker-item {
-  font-size: 0.75rem;
-  color: rgba(255,255,255,0.85);
-  padding: 9px 10px;
-  border-bottom: 1px solid rgba(255,255,255,0.07);
+  font-size: 0.73rem;
+  font-weight: 500;
+  color: #fff;
+  padding: 8px 10px;
+  margin-bottom: 7px;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 10px;
   line-height: 1.45;
   display: flex;
   align-items: flex-start;
   gap: 7px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
 }
 
 .ticker-tag {
-  font-size: 0.62rem;
-  font-weight: 700;
-  padding: 2px 6px;
-  border-radius: 4px;
+  font-size: 0.6rem;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 20px;
   white-space: nowrap;
   flex-shrink: 0;
-  margin-top: 1px;
+  margin-top: 2px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
-.ticker-tag.scholarship { background: #123C69; color: #fff; }
-.ticker-tag.jamb        { background: #059669; color: #fff; }
-.ticker-tag.grant       { background: #D97706; color: #fff; }
-.ticker-tag.waec        { background: #DC2626; color: #fff; }
+.ticker-tag.scholarship { background: #F9B233; color: #000; }
+.ticker-tag.jamb        { background: #10b981; color: #fff; }
+.ticker-tag.grant       { background: #f59e0b; color: #000; }
+.ticker-tag.waec        { background: #ef4444; color: #fff; }
 .ticker-tag.neco        { background: #0891B2; color: #fff; }
-.ticker-tag.admission   { background: #7C3AED; color: #fff; }
-.ticker-tag.loan        { background: #0E9F6E; color: #fff; }
+.ticker-tag.admission   { background: #a78bfa; color: #000; }
+.ticker-tag.loan        { background: #34d399; color: #000; }
 
 /* ---- Stats grid ---- */
 .trust-numbers {
