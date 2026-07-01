@@ -1883,12 +1883,46 @@ strong { color: var(--text-dark); font-weight: 600; }
 .ticker-tag.loan        { background: #34d399; color: #000; }
 
 /* ---- Stats grid ---- */
+.trust-right {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100%;
+}
+
+/* Side-by-side: ticker left, phone right */
+.trust-media-row {
+  display: flex;
+  gap: 12px;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.trust-floating-cards {
+  flex: 0 0 55%;
+  overflow: hidden;
+}
+
+.trust-floating-cards-inner {
+  display: flex;
+  flex-direction: column;
+  animation: scrollTicker 25s linear infinite;
+}
+
+.trust-phone-wrap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1200px;
+}
+
 .trust-numbers {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  align-content: stretch;
-  height: 100%;
+  gap: 12px;
+  flex-shrink: 0;
 }
 
 /* ---- Media stat cards ---- */
