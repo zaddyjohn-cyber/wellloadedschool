@@ -1721,43 +1721,71 @@ strong { color: var(--text-dark); font-weight: 600; }
 
 /* ---- Phone mockup ---- */
 .trust-phone-wrap {
+  flex: 0 0 48%;
   display: flex;
   justify-content: center;
-  perspective: 1000px;
+  align-items: center;
+  perspective: 1200px;
 }
 
 .trust-phone {
-  animation: rotatePhone 8s ease-in-out infinite;
-  transform-style: preserve-3d;
-  width: 100%;
+  width: 180px;
+  background: #1a1a2e;
+  border-radius: 36px;
+  border: 6px solid #2e2e4a;
+  outline: 2px solid rgba(255,255,255,0.08);
+  box-shadow:
+    0 0 0 1px #111,
+    8px 8px 30px rgba(0,0,0,0.7),
+    -2px -2px 10px rgba(255,255,255,0.04);
+  overflow: hidden;
   display: flex;
   flex-direction: column;
+  animation: rotatePhone 8s ease-in-out infinite;
+  transform-style: preserve-3d;
+  position: relative;
+  z-index: 10;
+}
+
+/* Phone side buttons */
+.trust-phone::before {
+  content: '';
+  position: absolute;
+  left: -9px;
+  top: 60px;
+  width: 4px;
+  height: 28px;
+  background: #2e2e4a;
+  border-radius: 2px 0 0 2px;
+  box-shadow: 0 36px 0 #2e2e4a;
+}
+.trust-phone::after {
+  content: '';
+  position: absolute;
+  right: -9px;
+  top: 80px;
+  width: 4px;
+  height: 44px;
+  background: #2e2e4a;
+  border-radius: 0 2px 2px 0;
 }
 
 @keyframes rotatePhone {
   0%   { transform: rotateY(0deg); }
-  25%  { transform: rotateY(15deg); }
+  25%  { transform: rotateY(18deg); }
   50%  { transform: rotateY(0deg); }
-  75%  { transform: rotateY(-15deg); }
+  75%  { transform: rotateY(-18deg); }
   100% { transform: rotateY(0deg); }
-}
-
-.trust-phone {
-  width: 100%;
-  max-width: 340px;
-  background: #0d2340;
-  border-radius: 18px;
-  border: 2px solid rgba(255,255,255,0.15);
-  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
-  overflow: hidden;
 }
 
 .trust-phone-bar {
   display: flex;
-  gap: 6px;
-  padding: 10px 14px;
-  background: rgba(255,255,255,0.05);
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  gap: 5px;
+  padding: 8px 12px;
+  background: #111122;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .trust-phone-dot {
