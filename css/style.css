@@ -1889,28 +1889,33 @@ strong { color: var(--text-dark); font-weight: 600; }
   gap: 20px;
 }
 
-/* ---- Video stat card ---- */
-.trust-num-card--video {
+/* ---- Media stat cards ---- */
+.trust-num-card--media {
   position: relative;
   overflow: hidden;
 }
 
-.trust-num-video {
+.trust-num-bg {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top;
+  object-position: center;
   z-index: 0;
-  opacity: 0.35;
 }
 
-.trust-num-video-overlay {
+.trust-num-bg-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(10,30,60,0.6);
+  background: rgba(8, 20, 50, 0.68);
   z-index: 1;
+}
+
+.trust-num-card--media .number,
+.trust-num-card--media .label {
+  position: relative;
+  z-index: 2;
 }
 
 .trust-num-card {
