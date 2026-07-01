@@ -1613,7 +1613,7 @@ strong { color: var(--text-dark); font-weight: 600; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
-  align-items: center;
+  align-items: stretch;
   position: relative;
   z-index: 1;
 }
@@ -1887,6 +1887,8 @@ strong { color: var(--text-dark); font-weight: 600; }
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+  align-content: stretch;
+  height: 100%;
 }
 
 /* ---- Media stat cards ---- */
