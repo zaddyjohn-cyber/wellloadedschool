@@ -1691,15 +1691,16 @@ strong { color: var(--text-dark); font-weight: 600; }
 /* Side-by-side: cards left, phone right */
 .trust-media-row {
   display: flex;
-  gap: 16px;
-  align-items: stretch;
-  min-height: 360px;
+  gap: 20px;
+  align-items: center;
+  min-height: 400px;
 }
 
-/* Scrolling cards column */
+/* Scrolling cards column — takes 55% */
 .trust-floating-cards {
-  flex: 1;
+  flex: 0 0 55%;
   overflow: hidden;
+  height: 400px;
   position: relative;
 }
 
@@ -1710,18 +1711,9 @@ strong { color: var(--text-dark); font-weight: 600; }
   animation: scrollTicker 25s linear infinite;
 }
 
-/* Phone column */
-.trust-phone-wrap {
-  flex: 0 0 48%;
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  perspective: 1000px;
-}
-
 /* ---- Phone mockup ---- */
 .trust-phone-wrap {
-  flex: 0 0 48%;
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
