@@ -302,19 +302,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const io = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.style.opacity  = '1';
-          entry.target.style.transform = 'translateY(0)';
+          entry.target.classList.add('fade-in--visible');
           io.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.12 });
+    }, { threshold: 0.05, rootMargin: '0px 0px -40px 0px' });
 
     fadeEls.forEach(el => {
-      el.style.opacity   = '0';
-      el.style.transform = 'translateY(24px)';
-      el.style.transition = 'opacity 0.55s ease, transform 0.55s ease';
+      el.classList.add('fade-in--ready');
       io.observe(el);
     });
+  } else {
+    // No IntersectionObserver support — just show everything
+    fadeEls.forEach(el => el.classList.add('fade-in--visible'));
   }
 
   /* ----------------------------------------------------------
