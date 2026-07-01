@@ -1886,16 +1886,16 @@ strong { color: var(--text-dark); font-weight: 600; }
 .trust-right {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 16px;
   height: 100%;
 }
 
-/* Side-by-side: ticker left, phone right */
+/* Phone + ticker fills all space above the stat cards */
 .trust-media-row {
-  display: flex;
-  gap: 12px;
   flex: 1;
   min-height: 0;
+  display: flex;
+  gap: 12px;
   overflow: hidden;
 }
 
@@ -1918,6 +1918,7 @@ strong { color: var(--text-dark); font-weight: 600; }
   perspective: 1200px;
 }
 
+/* Stat cards sit at natural size at bottom — no stretching */
 .trust-numbers {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
